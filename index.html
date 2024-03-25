@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>who I am</title>
+    <style>
+        .global-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .background-darkBlue{
+            width: 900px;
+            height: 550px;
+            background-color: rgb(13, 13, 39);
+            border-radius: 1%;
+            box-shadow: 2px 2px 3px rgb(84, 184, 118);
+            position: relative;
+        }
+        .first-container-objects{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+        }
+        .object-first-line{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 70%;
+            margin-left: 50%;
+        }
+        .rectangle{
+            padding: 25px 70px 25px 70px;
+            border-left: 8px solid rgb(155, 54, 116);
+            border-bottom: 8px solid rgb(155, 54, 116);
+            border-bottom-left-radius: 30px;
+           /*  box-shadow: 0px 2px 0px 0px white; */
+        }
+        .circle{
+            background-image: linear-gradient(to right,rgb(155, 54, 116), rgb(22, 23, 99));
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-top: -10px;
+            box-shadow: 0px 2px 2px 0px white;
+        }
+        .second-object{
+            width: 20%;
+            height: 10px;
+            background-image: linear-gradient(to bottom left,orange, rgb(47, 47, 90));
+            margin-top: 30px;
+            margin-left: 350px;
+        }
+        .third-object{
+            width: 20%;
+            height: 10px;
+            background-image: linear-gradient(to bottom left,rgb(155,54,116), rgb(47, 47, 90));
+            margin-top: 90px;
+            margin-left: 710px;
+            box-shadow: 1px 1px 1px 1px rgb(41, 40, 40);
+        }
+        .second-container-objects{
+            position: absolute;
+            z-index: 2;
+        }
+        .circle-gradient{
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom left,rgb(90, 215, 224), rgb(47, 47, 90));
+            margin-top: 130px;
+            margin-left: 400px;
+            box-shadow: 2px 2px 2px gray;
+            
+        }
+        .rectangle-gradient{
+            width: 600px;
+            height: 430px;
+            background-color: rgb(13, 13, 39);
+            z-index: 4;
+            margin-top: -430px;
+            opacity: 0.2;
+        }
+        .third-container-objects{
+            position: absolute;
+            z-index: 3;
+        }
+        .text-wrapper{
+            display: flex;
+            width: 50%;
+            height: 380px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(13, 13, 39);
+            color:white;
+            text-align: justify;
+            padding: 15px 50px 50px 50px;
+            margin-top: 100px;
+           /*  margin-left: 10px; */
+        }
+      
+        .circle-blue-light{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(90, 215, 224);
+            margin-top: -520px;
+            margin-left: 600px;
+        }
+
+        .cerpe-objet{
+            width: 40px;
+            height: 150px;
+            border-left: 8px solid rgb(155, 54, 116);
+            border-bottom: 8px solid rgb(155, 54, 116);
+            border-bottom-left-radius: 30px;
+            margin-left: 520px;
+            margin-top: 120px;
+            opacity: 0.5;
+        }
+        .fourth-container-objects{
+            position: absolute;
+            z-index: 4;
+        }
+        /* .img-wrapper{
+            margin-top: 50px;
+            max-width: 200px;
+        } */
+        .img-wrapper img{
+            width: 35%;
+            height: 490px;
+            margin-left: 550px;
+            margin-top: 60px;
+        }
+        .circle-dark-blue{
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background-color: rgb(13, 13, 39);
+            margin-top: -530px;
+            margin-left: 600px;
+            box-shadow: 2px 2px 2px 1px rgb(168, 11, 155);
+        }
+        .presentation{
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-top: -20px;
+            margin-bottom: 15px;
+        }
+        .text-animation{
+            color:rgb(90, 215, 224);
+            text-shadow: 1px 1px 1px rgb(121, 117, 117);
+        }
+        .title, .para-wrapper{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .btn{
+            color:white;
+            background-color: rgb(155, 54, 116);
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px rgb(160, 160, 160);
+        }
+    </style>
+</head>
+<body>
+    <div class="global-container">
+        <div class="background-darkBlue">
+            <div class="first-container-objects">
+                <div class="first-object">
+                    <div class="object-first-line">
+                        <div class="rectangle">
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="second-object"></div>
+                <div class="third-object"></div>
+            </div>
+            <div class="second-container-objects">
+                    <div class="circle-gradient"></div>
+                    <div class="rectangle-gradient"></div>
+            </div>
+            <div class="third-container-objects">
+                <div class="text-wrapper">
+                    <div class="wrapper-text">
+                        <div class="presentation">Hello, <span class="text-animation">It's Me Tronka</span></div>
+                        <div class="title">WEB SOFTWARE DEVELOPPERS</div>
+                        <div class="para-wrapper">
+                            <p>I'm a dynamic computer scientist with a passion for IT. With a degree in software engineering, I specialize in the development of web and mobile applications and also a graphic designer. And currently the IT manager of a structure that offers design services and creation applications or website. </p>
+                            <button class="btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="double-circle">
+                    <div class="circle-blue-light"></div>
+                    
+                </div>
+                <div class="cerpe-objet"></div>
+            </div>
+            <div class="fourth-container-objects">
+                <div class="img-wrapper">
+                    <img src="assets/img/picture.png" alt="">
+                </div>
+                <div class="circle-dark-blue"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
